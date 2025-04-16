@@ -1,69 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - CV</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <title>CV - [Tu Nombre]</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Fuente genérica para mejor legibilidad */
+            margin: 20px; /* Añade un poco de espacio alrededor del contenido */
+            background-color: #f4f4f4; /* Un fondo gris claro */
+            color: #333; /* Color de texto principal oscuro */
+            display: flex; /* Para centrar el contenido principal */
+            flex-direction: column; /* Alinea los elementos verticalmente */
+            align-items: center; /* Centra horizontalmente los elementos hijos */
+        }
+
+        header, main, footer {
+            width: 80%; /* Ancho del contenido principal */
+            max-width: 960px; /* Ancho máximo para pantallas grandes */
+            margin-bottom: 30px; /* Espacio entre secciones */
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco para las secciones */
+            border-radius: 8px; /* Bordes redondeados suaves */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            text-align: center; /* Centra el texto dentro de estas secciones */
+        }
+
+        header h1 {
+            color: #2980b9; /* Azul para el título principal */
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #777; /* Gris para la descripción bajo el título */
+            font-style: italic;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e67e22; /* Naranja para los enlaces de navegación */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d35400; /* Un tono de naranja más oscuro al pasar el ratón */
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: left; /* Alinea el texto de las secciones a la izquierda para mejor lectura */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Las secciones ocupan el ancho del main */
+        }
+
+        section h2 {
+            color: #2980b9; /* Azul para los títulos de las secciones */
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center; /* Centra los títulos de las secciones */
+        }
+
+        section ul, section ol {
+            padding-left: 20px;
+        }
+
+        section li {
+            margin-bottom: 8px;
+        }
+
+        section strong {
+            color: #333; /* Destaca el texto importante */
+        }
+
+        #contacto a {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
+        #contacto a:hover {
+            color: #d35400;
+        }
+
+        footer {
+            color: #777;
+            font-size: 0.9em;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+    </style>
+</head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <h2>Your Job Title</h2>
-        <p>Your Email | Your Phone Number | Your LinkedIn Profile</p>
-    </header>
+        <h1>[Tu Nombre Completo]</h1>
+        <p>Estudiante Doctoral en Ciencia de Materiales</p>
+        </header>
 
-    <section id="summary">
-        <h2>Summary</h2>
-        <p>A concise summary of your professional experience and skills.</p>
-    </section>
+    <main>
+        <section id="descripcion">
+            <h2>Motivación y Objetivos</h2>
+            <p>Soy un estudiante doctoral apasionado por la ciencia de materiales, con un fuerte interés en [menciona tus áreas específicas de interés, por ejemplo, el desarrollo de nuevos materiales con propiedades mejoradas, la nanotecnología, la simulación de materiales, etc.]. Mi principal motivación radica en contribuir al avance del conocimiento en este campo y aplicar mis habilidades para resolver desafíos científicos y tecnológicos relevantes.</p>
+            <p>Mis objetivos a corto plazo incluyen completar exitosamente mi investigación doctoral, publicar mis hallazgos en revistas de alto impacto y participar activamente en la comunidad científica a través de conferencias y colaboraciones. A largo plazo, aspiro a desarrollar una carrera en investigación y desarrollo, ya sea en la academia o en la industria, donde pueda seguir explorando las fronteras de la ciencia de materiales y generar un impacto significativo.</p>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Job Title</h3>
-            <h4>Company Name</h4>
-            <p>Start Date - End Date</p>
+        <section id="educacion">
+            <h2>Educación</h2>
             <ul>
-                <li>Key responsibility 1</li>
-                <li>Key responsibility 2</li>
-                <li>Key responsibility 3</li>
-            </ul>
-        </div>
+                <li>
+                    <strong>Doctorado en Ciencia de Materiales</strong>
+                    <br>
+                    [Nombre de la Universidad], [Ciudad, Provincia, País]
+                    <br>
+                    [Fecha de Inicio] - Presente (o Fecha de Finalización si ya terminaste)
+                    <br>
+                    Título de la tesis (si aplica): [Título de tu tesis]
+                </li>
+                <li>
+                    <strong>[Tu título de grado anterior, por ejemplo, Licenciatura en Química, Ingeniería de Materiales, etc.]</strong>
+                    <br>
+                    [Nombre de la Universidad], [Ciudad, Provincia, País]
+                    <br>
+                    [Fecha de Inicio] - [Fecha de Finalización]
+                    <br>
+                    [Menciona algún logro relevante o tema de tesis si lo deseas]
+                </li>
+                </ul>
         </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-        </ul>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Degree Name</h3>
-            <h4>University Name</h4>
-            <p>Start Date - End Date</p>
-            <p>Relevant coursework or achievements</p>
-        </div>
-        </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Project Title</h3>
-            <p>Brief description of the project</p>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
             <ul>
-                <li>Technology used</li>
-                <li>Key contributions</li>
-            </ul>
-        </div>
+                <li>
+                    <strong>[Tu puesto o rol más reciente, por ejemplo, Asistente de Investigación, Becario]</strong>
+                    <br>
+                    [Nombre del Laboratorio o Grupo de Investigación], [Nombre de la Universidad o Institución]
+                    <br>
+                    [Fecha de Inicio] - [Fecha de Finalización o Presente]
+                    <br>
+                    [Describe brevemente tus responsabilidades y logros clave. Usa viñetas si tienes varios puntos.]
+                </li>
+                <li>
+                    <strong>[Otro puesto o experiencia relevante]</strong>
+                    <br>
+                    [Nombre de la Institución o Empresa]
+                    <br>
+                    [Fecha de Inicio] - [Fecha de Finalización]
+                    <br>
+                    [Breve descripción de tus responsabilidades]
+                </li>
+                </ul>
         </section>
+
+        <section id="publicaciones">
+            <h2>Publicaciones (Opcional)</h2>
+            <p>Aquí puedes listar tus publicaciones. Puedes usar un formato como el siguiente:</p>
+            <ol>
+                <li>[Tu Nombre], [Otro(s) Autor(es)]. "[Título del Artículo]". <em>[Nombre de la Revista]</em>, [Volumen]([Número]), [Páginas], [Año]. <a href="[Enlace al artículo DOI o PDF si está disponible]">Enlace</a></li>
+                <li>[Otra publicación...]</li>
+            </ol>
+            <p>Si tienes muchas publicaciones, considera solo listar las más relevantes o crear una sección separada con un enlace a tu perfil de Google Scholar, ResearchGate, etc.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li><strong>Técnicas:</strong> [Lista de técnicas y metodologías que dominas, por ejemplo, Microscopía Electrónica de Barrido (SEM), Difracción de Rayos X (XRD), Espectroscopía Raman, Simulación DFT, etc.]</li>
+                <li><strong>Software:</strong> [Lista de software que utilizas, por ejemplo, MATLAB, Python (con librerías específicas como NumPy, SciPy, Matplotlib), software de simulación de materiales, etc.]</li>
+                <li><strong>Idiomas:</strong> [Lista de idiomas que hablas y tu nivel de competencia, por ejemplo, Español (Nativo), Inglés (Avanzado), etc.]</li>
+                <li><strong>Otras habilidades:</strong> [Otras habilidades relevantes, por ejemplo, análisis de datos, redacción científica, presentación de resultados, trabajo en equipo, etc.]</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de los siguientes medios:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:[Tu dirección de correo electrónico]">[Tu dirección de correo electrónico]</a></li>
+                <li><strong>LinkedIn:</strong> <a href="[Enlace a tu perfil de LinkedIn]" target="_blank">Perfil de LinkedIn</a> (opcional)</li>
+                <li><strong>Otra plataforma (opcional):</strong> [Enlace a tu perfil de ResearchGate, Google Scholar, etc.]</li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; Your Name, 2023</p>
+        <p>&copy; 2025 [Tu Nombre]</p>
     </footer>
 </body>
 </html>
