@@ -1,97 +1,55 @@
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: #1B1B25;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-header, main, footer {
-    width: 80%;
-    max-width: 960px;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.separator {
+  width: 30%;
 }
 
-header h1 {
-    color: #2980b9;
-    margin-bottom: 5px;
+.title {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  
+  a {
+    color: #DB4D57;
+    
+    &:hover {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+  
+  hr {
+    width: 75%;
+  }
 }
 
-header p {
-    color: #777;
-    font-style: italic;
+.summary {
+  padding: 20px;
+  
+  p {
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+  }
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #e67e22;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #d35400;
-}
-
-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    text-align: left;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-section h2 {
-    color: #2980b9;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-section ul, section ol {
-    padding-left: 20px;
-}
-
-section li {
-    margin-bottom: 8px;
-}
-
-section strong {
-    color: #333;
-}
-
-#contacto a {
-    color: #e67e22;
-    text-decoration: underline;
-}
-
-#contacto a:hover {
-    color: #d35400;
-}
-
-footer {
-    color: #777;
-    font-size: 0.9em;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    padding-top: 15px;
+.work-experience {
+  padding: 20px;
+  
+  .experience-title {
+    margin-top: 50px;
+  }
+  
+  .experience-summary {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+  }
 }
