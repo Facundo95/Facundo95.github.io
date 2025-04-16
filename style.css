@@ -1,48 +1,97 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
+        body {
+            font-family: sans-serif; /* Fuente genérica para mejor legibilidad */
+            margin: 20px; /* Añade un poco de espacio alrededor del contenido */
+            background-color: #f4f4f4; /* Un fondo gris claro */
+            color: #333; /* Color de texto principal oscuro */
+            display: flex; /* Para centrar el contenido principal */
+            flex-direction: column; /* Alinea los elementos verticalmente */
+            align-items: center; /* Centra horizontalmente los elementos hijos */
+        }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
+        header, main, footer {
+            width: 80%; /* Ancho del contenido principal */
+            max-width: 960px; /* Ancho máximo para pantallas grandes */
+            margin-bottom: 30px; /* Espacio entre secciones */
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco para las secciones */
+            border-radius: 8px; /* Bordes redondeados suaves */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            text-align: center; /* Centra el texto dentro de estas secciones */
+        }
 
-h1, h2 {
-    color: #333;
-}
+        header h1 {
+            color: #2980b9; /* Azul para el título principal */
+            margin-bottom: 5px;
+        }
 
-p {
-    color: #666;
-}
+        header p {
+            color: #777; /* Gris para la descripción bajo el título */
+            font-style: italic;
+        }
 
-section {
-    margin-bottom: 30px;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-.experience-item, .education-item, .project-item {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
+        nav a {
+            text-decoration: none;
+            color: #e67e22; /* Naranja para los enlaces de navegación */
+            font-weight: bold;
+        }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
+        nav a:hover {
+            color: #d35400; /* Un tono de naranja más oscuro al pasar el ratón */
+        }
 
-a:hover {
-    text-decoration: underline;
-}
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: left; /* Alinea el texto de las secciones a la izquierda para mejor lectura */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Las secciones ocupan el ancho del main */
+        }
 
-.centered-text {
-  text-align: center;
-}
+        section h2 {
+            color: #2980b9; /* Azul para los títulos de las secciones */
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center; /* Centra los títulos de las secciones */
+        }
+
+        section ul, section ol {
+            padding-left: 20px;
+        }
+
+        section li {
+            margin-bottom: 8px;
+        }
+
+        section strong {
+            color: #333; /* Destaca el texto importante */
+        }
+
+        #contacto a {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
+        #contacto a:hover {
+            color: #d35400;
+        }
+
+        footer {
+            color: #777;
+            font-size: 0.9em;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
